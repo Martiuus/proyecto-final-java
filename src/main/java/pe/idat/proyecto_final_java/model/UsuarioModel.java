@@ -2,7 +2,7 @@ package pe.idat.proyecto_final_java.model;
 
 import java.time.LocalDate;
 
-public class usuario {
+public class UsuarioModel {
     private int idUsuario;
     private String nombreUsuario;
     private String correoUsuario;
@@ -10,10 +10,12 @@ public class usuario {
     private String rol;
     private LocalDate fechaCreacion;
 
-    public usuario(){
+
+
+    public UsuarioModel(){
     }
 
-    public usuario(int idUsuario, String nombreUsuario, String correoUsuario, String contraseña, String rol, LocalDate fechaCreacion) {
+    public UsuarioModel(int idUsuario, String nombreUsuario, String correoUsuario, String contraseña, String rol, LocalDate fechaCreacion) {
         this.idUsuario = idUsuario;
         this.nombreUsuario = nombreUsuario;
         this.correoUsuario = correoUsuario;

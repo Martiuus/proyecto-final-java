@@ -1,15 +1,15 @@
 package pe.idat.proyecto_final_java.model;
 
-public class proveedor {
+public class ProveedorModel {
     private int idProveedor;
     private String nombreProveedor;
     private String telefonoProveedor;
     private String correoProveedor;
 
-    public proveedor(){
+    public ProveedorModel(){
     }
 
-    public proveedor(int idProveedor, String nombreProveedor, String telefonoProveedor, String correoProveedor) {
+    public ProveedorModel(int idProveedor, String nombreProveedor, String telefonoProveedor, String correoProveedor) {
         this.idProveedor = idProveedor;
         this.nombreProveedor = nombreProveedor;
         this.telefonoProveedor = telefonoProveedor;

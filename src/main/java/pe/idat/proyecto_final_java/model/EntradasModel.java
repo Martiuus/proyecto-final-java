@@ -1,10 +1,8 @@
 package pe.idat.proyecto_final_java.model;
 
-import org.springframework.cglib.core.Local;
-
 import java.time.LocalDate;
 
-public class entradas {
+public class EntradasModel {
     private int idEntradas;
     private int productoId;
     private int proveedorId;
@@ -12,10 +10,10 @@ public class entradas {
     private LocalDate fechaEntrada;
     private int usuarioId;
 
-    public entradas(){
+    public EntradasModel(){
     }
 
-    public entradas(int idEntradas, int productoId, int proveedorId, int cantidad, LocalDate fechaEntrada, int usuarioId) {
+    public EntradasModel(int idEntradas, int productoId, int proveedorId, int cantidad, LocalDate fechaEntrada, int usuarioId) {
         this.idEntradas = idEntradas;
         this.productoId = productoId;
         this.proveedorId = proveedorId;

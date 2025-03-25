@@ -2,17 +2,17 @@ package pe.idat.proyecto_final_java.model;
 
 import java.time.LocalDate;
 
-public class lote {
+public class LoteModel {
     private int idLote;
     private int productoId;
     private int cantidad;
     private LocalDate fechaIngreso;
     private LocalDate fechaSalida;
 
-    public lote(){
+    public LoteModel(){
     }
 
-    public lote(int idLote, int productoId, int cantidad, LocalDate fechaIngreso, LocalDate fechaSalida) {
+    public LoteModel(int idLote, int productoId, int cantidad, LocalDate fechaIngreso, LocalDate fechaSalida) {
         this.idLote = idLote;
         this.productoId = productoId;
         this.cantidad = cantidad;

@@ -1,15 +1,15 @@
 package pe.idat.proyecto_final_java.model;
 
 
-public class categoria {
+public class CategoriaModel {
     private int idCategoria;
     private String nombreCategoria;
     private String descripcion;
 
-    public categoria(){
+    public CategoriaModel(){
     }
 
-    public categoria(int idCategoria, String nombreCategoria, String descripcion) {
+    public CategoriaModel(int idCategoria, String nombreCategoria, String descripcion) {
         this.idCategoria = idCategoria;
         this.nombreCategoria = nombreCategoria;
         this.descripcion = descripcion;

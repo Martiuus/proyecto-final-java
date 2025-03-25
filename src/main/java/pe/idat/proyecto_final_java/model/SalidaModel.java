@@ -2,7 +2,7 @@ package pe.idat.proyecto_final_java.model;
 
 import java.time.LocalDate;
 
-public class salida {
+public class SalidaModel {
     private int idSalida;
     private int productoId;
     private int cantidad;
@@ -10,10 +10,10 @@ public class salida {
     private String motivo;
     private int usuarioId;
 
-    public salida(){
+    public SalidaModel(){
     }
 
-    public salida(int idSalida, int productoId, int cantidad, LocalDate fechaSalida, String motivo, int usuarioId) {
+    public SalidaModel(int idSalida, int productoId, int cantidad, LocalDate fechaSalida, String motivo, int usuarioId) {
         this.idSalida = idSalida;
         this.productoId = productoId;
         this.cantidad = cantidad;

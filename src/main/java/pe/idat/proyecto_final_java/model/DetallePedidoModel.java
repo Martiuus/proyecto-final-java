@@ -1,6 +1,6 @@
 package pe.idat.proyecto_final_java.model;
 
-public class detallePedido {
+public class DetallePedidoModel {
     private int idDetallePedido;
     private int pedidoId;
     private int productoId;
@@ -8,10 +8,10 @@ public class detallePedido {
     private double precio;
     private double subtotal;
 
-    public detallePedido(){
+    public DetallePedidoModel(){
     }
 
-    public detallePedido(int idDetallePedido, int pedidoId, int productoId, int cantidad, double precio, double subtotal) {
+    public DetallePedidoModel(int idDetallePedido, int pedidoId, int productoId, int cantidad, double precio, double subtotal) {
         this.idDetallePedido = idDetallePedido;
         this.pedidoId = pedidoId;
         this.productoId = productoId;

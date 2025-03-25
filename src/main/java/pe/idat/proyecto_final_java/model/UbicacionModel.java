@@ -1,15 +1,15 @@
 package pe.idat.proyecto_final_java.model;
 
-public class ubicacion {
+public class UbicacionModel {
     private int idUbicacion;
     private String nombreUbicacion;
     private String descripcionUbicacion;
     private String direccionUbicacion;
 
-    public ubicacion(){
+    public UbicacionModel(){
     }
 
-    public ubicacion(int idUbicacion, String nombreUbicacion, String descripcionUbicacion, String direccionUbicacion) {
+    public UbicacionModel(int idUbicacion, String nombreUbicacion, String descripcionUbicacion, String direccionUbicacion) {
         this.idUbicacion = idUbicacion;
         this.nombreUbicacion = nombreUbicacion;
         this.descripcionUbicacion = descripcionUbicacion;

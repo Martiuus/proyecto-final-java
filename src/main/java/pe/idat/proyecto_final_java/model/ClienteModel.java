@@ -1,16 +1,16 @@
 package pe.idat.proyecto_final_java.model;
 
-public class cliente {
+public class ClienteModel {
     private String idCliente;
     private String nombreCliente;
     private String correoCliente;
     private String telefonoCliente;
     private String direccionCliente;
 
-    public cliente(){
+    public ClienteModel(){
     }
 
-    public cliente(String idCliente, String nombreCliente, String correoCliente, String telefonoCliente, String direccionCliente) {
+    public ClienteModel(String idCliente, String nombreCliente, String correoCliente, String telefonoCliente, String direccionCliente) {
         this.idCliente = idCliente;
         this.nombreCliente = nombreCliente;
         this.correoCliente = correoCliente;

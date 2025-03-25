@@ -1,4 +1,4 @@
 package pe.idat.proyecto_final_java.controller;
 
-public class usuarioController {
+public class UsuarioController {
 }

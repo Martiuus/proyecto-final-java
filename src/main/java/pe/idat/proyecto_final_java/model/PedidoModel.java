@@ -2,16 +2,16 @@ package pe.idat.proyecto_final_java.model;
 
 import java.time.LocalDate;
 
-public class pedido {
+public class PedidoModel {
     private int idPedido;
     private int ordenFinalId;
     private int clienteId;
     private LocalDate fecha;
 
-    public pedido(){
+    public PedidoModel(){
     }
 
-    public pedido(int idPedido, int ordenFinalId, int clienteId, LocalDate fecha) {
+    public PedidoModel(int idPedido, int ordenFinalId, int clienteId, LocalDate fecha) {
         this.idPedido = idPedido;
         this.ordenFinalId = ordenFinalId;
         this.clienteId = clienteId;

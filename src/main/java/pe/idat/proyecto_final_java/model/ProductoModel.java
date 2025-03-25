@@ -1,6 +1,6 @@
 package pe.idat.proyecto_final_java.model;
 
-public class producto {
+public class ProductoModel {
     private int idProducto;
     private String nombreProducto;
     private String descripcionProducto;
@@ -10,10 +10,10 @@ public class producto {
     private int proveedorId;
     private int ubicacionId;
 
-    public producto(){
+    public ProductoModel(){
     }
 
-    public producto(int idProducto, String nombreProducto, String descripcionProducto, double precioProducto, int cantidadProducto, int categoriaId, int proveedorId, int ubicacionId) {
+    public ProductoModel(int idProducto, String nombreProducto, String descripcionProducto, double precioProducto, int cantidadProducto, int categoriaId, int proveedorId, int ubicacionId) {
         this.idProducto = idProducto;
         this.nombreProducto = nombreProducto;
         this.descripcionProducto = descripcionProducto;

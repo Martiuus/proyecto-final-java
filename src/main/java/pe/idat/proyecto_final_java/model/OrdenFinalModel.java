@@ -2,17 +2,17 @@ package pe.idat.proyecto_final_java.model;
 
 import java.time.LocalDate;
 
-public class ordenFinal {
+public class OrdenFinalModel {
     private int idOrdenFinal;
     private int clienteId;
     private LocalDate fechaOrdenFinal;
     private String estadoOrdenFinal;
     private double totalOrdenFinal;
 
-    public ordenFinal(){
+    public OrdenFinalModel(){
     }
 
-    public ordenFinal(int idOrdenFinal, int clienteId, LocalDate fechaOrdenFinal, String estadoOrdenFinal, double totalOrdenFinal) {
+    public OrdenFinalModel(int idOrdenFinal, int clienteId, LocalDate fechaOrdenFinal, String estadoOrdenFinal, double totalOrdenFinal) {
         this.idOrdenFinal = idOrdenFinal;
         this.clienteId = clienteId;
         this.fechaOrdenFinal = fechaOrdenFinal;
