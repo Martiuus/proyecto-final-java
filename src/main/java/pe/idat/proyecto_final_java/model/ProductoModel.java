@@ -1,14 +1,14 @@
 package pe.idat.proyecto_final_java.model;
 
 public class ProductoModel {
-    private int idProducto;
+    private Integer idProducto;
     private String nombreProducto;
     private String descripcionProducto;
-    private double precioProducto;
-    private int cantidadProducto;
-    private int categoriaId;
-    private int proveedorId;
-    private int ubicacionId;
+    private Double precioProducto;
+    private Integer cantidadProducto;
+    private Integer categoriaId;
+    private Integer proveedorId;
+    private Integer ubicacionId;
 
     public ProductoModel(){
     }

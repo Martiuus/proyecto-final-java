@@ -3,9 +3,9 @@ package pe.idat.proyecto_final_java.model;
 import java.time.LocalDate;
 
 public class PedidoModel {
-    private int idPedido;
-    private int ordenFinalId;
-    private int clienteId;
+    private Integer idPedido;
+    private Integer ordenFinalId;
+    private Integer clienteId;
     private LocalDate fecha;
 
     public PedidoModel(){

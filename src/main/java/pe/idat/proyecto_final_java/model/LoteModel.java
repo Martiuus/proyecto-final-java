@@ -3,9 +3,9 @@ package pe.idat.proyecto_final_java.model;
 import java.time.LocalDate;
 
 public class LoteModel {
-    private int idLote;
-    private int productoId;
-    private int cantidad;
+    private Integer idLote;
+    private Integer productoId;
+    private Integer cantidad;
     private LocalDate fechaIngreso;
     private LocalDate fechaSalida;
 

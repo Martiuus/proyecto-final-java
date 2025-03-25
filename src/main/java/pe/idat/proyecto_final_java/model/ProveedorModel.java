@@ -1,7 +1,7 @@
 package pe.idat.proyecto_final_java.model;
 
 public class ProveedorModel {
-    private int idProveedor;
+    private Integer idProveedor;
     private String nombreProveedor;
     private String telefonoProveedor;
     private String correoProveedor;

@@ -1,7 +1,7 @@
 package pe.idat.proyecto_final_java.model;
 
 public class UbicacionModel {
-    private int idUbicacion;
+    private Integer idUbicacion;
     private String nombreUbicacion;
     private String descripcionUbicacion;
     private String direccionUbicacion;

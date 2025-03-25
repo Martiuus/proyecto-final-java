@@ -3,7 +3,7 @@ package pe.idat.proyecto_final_java.model;
 import java.time.LocalDate;
 
 public class UsuarioModel {
-    private int idUsuario;
+    private Integer idUsuario;
     private String nombreUsuario;
     private String correoUsuario;
     private String contraseña;

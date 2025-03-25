@@ -3,11 +3,11 @@ package pe.idat.proyecto_final_java.model;
 import java.time.LocalDate;
 
 public class OrdenFinalModel {
-    private int idOrdenFinal;
-    private int clienteId;
+    private Integer idOrdenFinal;
+    private Integer clienteId;
     private LocalDate fechaOrdenFinal;
     private String estadoOrdenFinal;
-    private double totalOrdenFinal;
+    private Double totalOrdenFinal;
 
     public OrdenFinalModel(){
     }

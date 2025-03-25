@@ -1,12 +1,12 @@
 package pe.idat.proyecto_final_java.model;
 
 public class DetallePedidoModel {
-    private int idDetallePedido;
-    private int pedidoId;
-    private int productoId;
-    private int cantidad;
-    private double precio;
-    private double subtotal;
+    private Integer idDetallePedido;
+    private Integer pedidoId;
+    private Integer productoId;
+    private Integer cantidad;
+    private Double precio;
+    private Double subtotal;
 
     public DetallePedidoModel(){
     }

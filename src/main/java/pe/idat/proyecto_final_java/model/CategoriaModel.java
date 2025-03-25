@@ -2,7 +2,7 @@ package pe.idat.proyecto_final_java.model;
 
 
 public class CategoriaModel {
-    private int idCategoria;
+    private Integer idCategoria;
     private String nombreCategoria;
     private String descripcion;
 

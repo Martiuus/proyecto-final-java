@@ -3,12 +3,12 @@ package pe.idat.proyecto_final_java.model;
 import java.time.LocalDate;
 
 public class EntradasModel {
-    private int idEntradas;
-    private int productoId;
-    private int proveedorId;
-    private int cantidad;
+    private Integer idEntradas;
+    private Integer productoId;
+    private Integer proveedorId;
+    private Integer cantidad;
     private LocalDate fechaEntrada;
-    private int usuarioId;
+    private Integer usuarioId;
 
     public EntradasModel(){
     }
