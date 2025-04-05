@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link th:href="@{/css/bootstrap/bootstrap.css}" rel="stylesheet">
+<head th:insert="~{layout::head}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Distribuidora Saire</title>
+  <link rel="stylesheet" href="/css/bootstrap/bootstrap.css">
+  <script src="/js/bootstrap/bootstrap.bundle.js" defer></script>
 </head>
 <body>
-<nav th:object="${homemodel}" class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<!-- NAVBAR -->
+<nav th:insert="~{layout::navbar}"></nav>
+
+<!-- DASHBOARD HOME -->
+<div class="container my-5">
+  <h2 class="mb-4 text-center fw-bold">Panel de Control - Distribuidora Saire</h2>
+
+  <div class="row g-4 text-center">
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title text-muted">Productos</h5>
+          <p class="display-6 fw-semibold text-primary">--</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title text-muted">Clientes</h5>
+          <p class="display-6 fw-semibold text-success">--</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title text-muted">Pedidos</h5>
+          <p class="display-6 fw-semibold text-warning">--</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title text-muted">Proveedores</h5>
+          <p class="display-6 fw-semibold text-danger">--</p>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
+
+  <div class="row mt-5">
+    <div class="col-lg-6 mb-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-header bg-white fw-bold">Últimos Pedidos</div>
+        <div class="card-body">
+          <p class="text-muted fst-italic">Aquí se mostrarán los pedidos más recientes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-header bg-white fw-bold">Productos con Bajo Stock</div>
+        <div class="card-body">
+          <p class="text-muted fst-italic">Lista de productos que necesitan reposición.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
+
 </html>

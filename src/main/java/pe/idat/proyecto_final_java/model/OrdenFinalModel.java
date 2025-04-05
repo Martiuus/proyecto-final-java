@@ -3,60 +3,52 @@ package pe.idat.proyecto_final_java.model;
 import java.time.LocalDate;
 
 public class OrdenFinalModel {
-    private Integer idOrdenFinal;
-    private Integer clienteId;
-    private LocalDate fechaOrdenFinal;
-    private String estadoOrdenFinal;
-    private Double totalOrdenFinal;
+    private Integer idordenfinal;
+    private Integer clienteid;
+    private LocalDate fechaordenfinal;
+    private String estadoordenfinal;
+    private Double totalordenfinal;
 
     public OrdenFinalModel(){
     }
 
-    public OrdenFinalModel(int idOrdenFinal, int clienteId, LocalDate fechaOrdenFinal, String estadoOrdenFinal, double totalOrdenFinal) {
-        this.idOrdenFinal = idOrdenFinal;
-        this.clienteId = clienteId;
-        this.fechaOrdenFinal = fechaOrdenFinal;
-        this.estadoOrdenFinal = estadoOrdenFinal;
-        this.totalOrdenFinal = totalOrdenFinal;
+    public Integer getIdordenfinal() {
+        return idordenfinal;
     }
 
-    public int getIdOrdenFinal() {
-        return idOrdenFinal;
+    public void setIdordenfinal(Integer idordenfinal) {
+        this.idordenfinal = idordenfinal;
     }
 
-    public void setIdOrdenFinal(int idOrdenFinal) {
-        this.idOrdenFinal = idOrdenFinal;
+    public Integer getClienteid() {
+        return clienteid;
     }
 
-    public int getClienteId() {
-        return clienteId;
+    public void setClienteid(Integer clienteid) {
+        this.clienteid = clienteid;
     }
 
-    public void setClienteId(int clienteId) {
-        this.clienteId = clienteId;
+    public LocalDate getFechaordenfinal() {
+        return fechaordenfinal;
     }
 
-    public LocalDate getFechaOrdenFinal() {
-        return fechaOrdenFinal;
+    public void setFechaordenfinal(LocalDate fechaordenfinal) {
+        this.fechaordenfinal = fechaordenfinal;
     }
 
-    public void setFechaOrdenFinal(LocalDate fechaOrdenFinal) {
-        this.fechaOrdenFinal = fechaOrdenFinal;
+    public String getEstadoordenfinal() {
+        return estadoordenfinal;
     }
 
-    public String getEstadoOrdenFinal() {
-        return estadoOrdenFinal;
+    public void setEstadoordenfinal(String estadoordenfinal) {
+        this.estadoordenfinal = estadoordenfinal;
     }
 
-    public void setEstadoOrdenFinal(String estadoOrdenFinal) {
-        this.estadoOrdenFinal = estadoOrdenFinal;
+    public Double getTotalordenfinal() {
+        return totalordenfinal;
     }
 
-    public double getTotalOrdenFinal() {
-        return totalOrdenFinal;
-    }
-
-    public void setTotalOrdenFinal(double totalOrdenFinal) {
-        this.totalOrdenFinal = totalOrdenFinal;
+    public void setTotalordenfinal(Double totalordenfinal) {
+        this.totalordenfinal = totalordenfinal;
     }
 }

@@ -18,7 +18,6 @@ public class LoginController {
 
     @PostMapping("/logincontrol")
     public String login(@ModelAttribute("loginmodel") LoginModel loginModel, Model model) {
-        // Credenciales de prueba (reemplazar con BD o Spring Security)
         String usuarioCorrecto = "admin";
         String contraseñaCorrecta = "1234";
 

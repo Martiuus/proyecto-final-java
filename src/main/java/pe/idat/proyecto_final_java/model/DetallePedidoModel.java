@@ -1,70 +1,58 @@
 package pe.idat.proyecto_final_java.model;
 
 public class DetallePedidoModel {
-    private Integer idDetallePedido;
-    private Integer pedidoId;
-    private Integer productoId;
+    private Integer detallepedidoid;
+    private Integer pedidoid;
+    private Integer productoid;
     private Integer cantidad;
     private Double precio;
     private Double subtotal;
 
-    public DetallePedidoModel(){
+    public Integer getDetallepedidoid() {
+        return detallepedidoid;
     }
 
-    public DetallePedidoModel(int idDetallePedido, int pedidoId, int productoId, int cantidad, double precio, double subtotal) {
-        this.idDetallePedido = idDetallePedido;
-        this.pedidoId = pedidoId;
-        this.productoId = productoId;
-        this.cantidad = cantidad;
-        this.precio = precio;
-        this.subtotal = subtotal;
+    public void setDetallepedidoid(Integer detallepedidoid) {
+        this.detallepedidoid = detallepedidoid;
     }
 
-    public int getIdDetallePedido() {
-        return idDetallePedido;
+    public Integer getPedidoid() {
+        return pedidoid;
     }
 
-    public void setIdDetallePedido(int idDetallePedido) {
-        this.idDetallePedido = idDetallePedido;
+    public void setPedidoid(Integer pedidoid) {
+        this.pedidoid = pedidoid;
     }
 
-    public int getPedidoId() {
-        return pedidoId;
+    public Integer getProductoid() {
+        return productoid;
     }
 
-    public void setPedidoId(int pedidoId) {
-        this.pedidoId = pedidoId;
+    public void setProductoid(Integer productoid) {
+        this.productoid = productoid;
     }
 
-    public int getProductoId() {
-        return productoId;
-    }
-
-    public void setProductoId(int productoId) {
-        this.productoId = productoId;
-    }
-
-    public int getCantidad() {
+    public Integer getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(Integer cantidad) {
         this.cantidad = cantidad;
     }
 
-    public double getPrecio() {
+    public Double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(Double precio) {
         this.precio = precio;
     }
 
-    public double getSubtotal() {
+    public Double getSubtotal() {
         return subtotal;
     }
 
-    public void setSubtotal(double subtotal) {
+    public void setSubtotal(Double subtotal) {
         this.subtotal = subtotal;
     }
 }

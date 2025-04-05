@@ -3,70 +3,58 @@ package pe.idat.proyecto_final_java.model;
 import java.time.LocalDate;
 
 public class EntradasModel {
-    private Integer idEntradas;
-    private Integer productoId;
-    private Integer proveedorId;
+    private Integer entradaid;
+    private Integer productoid;
+    private Integer proveedorid;
     private Integer cantidad;
-    private LocalDate fechaEntrada;
-    private Integer usuarioId;
+    private LocalDate fecha;
+    private Integer usuarioid;
 
-    public EntradasModel(){
+    public Integer getEntradaid() {
+        return entradaid;
     }
 
-    public EntradasModel(int idEntradas, int productoId, int proveedorId, int cantidad, LocalDate fechaEntrada, int usuarioId) {
-        this.idEntradas = idEntradas;
-        this.productoId = productoId;
-        this.proveedorId = proveedorId;
-        this.cantidad = cantidad;
-        this.fechaEntrada = fechaEntrada;
-        this.usuarioId = usuarioId;
+    public void setEntradaid(Integer entradaid) {
+        this.entradaid = entradaid;
     }
 
-    public int getIdEntradas() {
-        return idEntradas;
+    public Integer getProductoid() {
+        return productoid;
     }
 
-    public void setIdEntradas(int idEntradas) {
-        this.idEntradas = idEntradas;
+    public void setProductoid(Integer productoid) {
+        this.productoid = productoid;
     }
 
-    public int getProductoId() {
-        return productoId;
+    public Integer getProveedorid() {
+        return proveedorid;
     }
 
-    public void setProductoId(int productoId) {
-        this.productoId = productoId;
+    public void setProveedorid(Integer proveedorid) {
+        this.proveedorid = proveedorid;
     }
 
-    public int getProveedorId() {
-        return proveedorId;
-    }
-
-    public void setProveedorId(int proveedorId) {
-        this.proveedorId = proveedorId;
-    }
-
-    public int getCantidad() {
+    public Integer getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(Integer cantidad) {
         this.cantidad = cantidad;
     }
 
-    public LocalDate getFechaEntrada() {
-        return fechaEntrada;
+    public LocalDate getFecha() {
+        return fecha;
     }
 
-    public void setFechaEntrada(LocalDate fechaEntrada) {
-        this.fechaEntrada = fechaEntrada;
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
     }
 
-    public int getUsuarioId() {
-        return usuarioId;
+    public Integer getUsuarioid() {
+        return usuarioid;
     }
 
-    public void setUsuarioId(int usuarioId) {
-        this.usuarioId = usuarioId;
+    public void setUsuarioid(Integer usuarioid) {
+        this.usuarioid = usuarioid;
     }
 }

@@ -1,60 +1,50 @@
 package pe.idat.proyecto_final_java.model;
 
 public class ClienteModel {
-    private String idCliente;
-    private String nombreCliente;
-    private String correoCliente;
-    private String telefonoCliente;
-    private String direccionCliente;
+    private String clienteid;
+    private String nombre;
+    private String correo;
+    private String telefono;
+    private String direccion;
 
-    public ClienteModel(){
+
+    public String getClienteid() {
+        return clienteid;
     }
 
-    public ClienteModel(String idCliente, String nombreCliente, String correoCliente, String telefonoCliente, String direccionCliente) {
-        this.idCliente = idCliente;
-        this.nombreCliente = nombreCliente;
-        this.correoCliente = correoCliente;
-        this.telefonoCliente = telefonoCliente;
-        this.direccionCliente = direccionCliente;
+    public void setClienteid(String clienteid) {
+        this.clienteid = clienteid;
     }
 
-    public String getIdCliente() {
-        return idCliente;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setIdCliente(String idCliente) {
-        this.idCliente = idCliente;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getNombreCliente() {
-        return nombreCliente;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setNombreCliente(String nombreCliente) {
-        this.nombreCliente = nombreCliente;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
-    public String getCorreoCliente() {
-        return correoCliente;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setCorreoCliente(String correoCliente) {
-        this.correoCliente = correoCliente;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
-    public String getTelefonoCliente() {
-        return telefonoCliente;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setTelefonoCliente(String telefonoCliente) {
-        this.telefonoCliente = telefonoCliente;
-    }
-
-    public String getDireccionCliente() {
-        return direccionCliente;
-    }
-
-    public void setDireccionCliente(String direccionCliente) {
-        this.direccionCliente = direccionCliente;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 }

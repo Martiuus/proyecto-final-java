@@ -1,45 +1,43 @@
 package pe.idat.proyecto_final_java.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.time.LocalDate;
 
+@Entity
 public class PedidoModel {
-    private Integer idPedido;
-    private Integer ordenFinalId;
-    private Integer clienteId;
+    @Id
+    private Integer idpedido;
+    private Integer ordenfinalid;
+    private Integer clienteid;
     private LocalDate fecha;
 
     public PedidoModel(){
     }
 
-    public PedidoModel(int idPedido, int ordenFinalId, int clienteId, LocalDate fecha) {
-        this.idPedido = idPedido;
-        this.ordenFinalId = ordenFinalId;
-        this.clienteId = clienteId;
-        this.fecha = fecha;
+    public Integer getIdpedido() {
+        return idpedido;
     }
 
-    public int getIdPedido() {
-        return idPedido;
+    public void setIdpedido(Integer idpedido) {
+        this.idpedido = idpedido;
     }
 
-    public void setIdPedido(int idPedido) {
-        this.idPedido = idPedido;
+    public Integer getOrdenfinalid() {
+        return ordenfinalid;
     }
 
-    public int getOrdenFinalId() {
-        return ordenFinalId;
+    public void setOrdenfinalid(Integer ordenfinalid) {
+        this.ordenfinalid = ordenfinalid;
     }
 
-    public void setOrdenFinalId(int ordenFinalId) {
-        this.ordenFinalId = ordenFinalId;
+    public Integer getClienteid() {
+        return clienteid;
     }
 
-    public int getClienteId() {
-        return clienteId;
-    }
-
-    public void setClienteId(int clienteId) {
-        this.clienteId = clienteId;
+    public void setClienteid(Integer clienteid) {
+        this.clienteid = clienteid;
     }
 
     public LocalDate getFecha() {

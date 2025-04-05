@@ -1,34 +1,31 @@
 package pe.idat.proyecto_final_java.model;
 
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "categoria")
 public class CategoriaModel {
-    private Integer idCategoria;
-    private String nombreCategoria;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer categoriaid;
+    private String nombre;
     private String descripcion;
 
-    public CategoriaModel(){
+    public Integer getCategoriaid() {
+        return categoriaid;
     }
 
-    public CategoriaModel(int idCategoria, String nombreCategoria, String descripcion) {
-        this.idCategoria = idCategoria;
-        this.nombreCategoria = nombreCategoria;
-        this.descripcion = descripcion;
+    public void setCategoriaid(Integer categoriaid) {
+        this.categoriaid = categoriaid;
     }
 
-    public int getIdCategoria() {
-        return idCategoria;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setIdCategoria(int idCategoria) {
-        this.idCategoria = idCategoria;
-    }
-
-    public String getNombreCategoria() {
-        return nombreCategoria;
-    }
-
-    public void setNombreCategoria(String nombreCategoria) {
-        this.nombreCategoria = nombreCategoria;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getDescripcion() {
